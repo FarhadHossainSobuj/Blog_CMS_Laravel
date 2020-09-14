@@ -7,7 +7,7 @@
 {!! Form::open(['method' => 'POST', 'action'=>'AdminUsersController@store', 'files'=>'true']) !!}
 
     <div class="form-group">
-        {!! Form::label('name', "Title") !!}
+        {!! Form::label('name', "Name") !!}
         {!! Form::text('name', null, ['class'=>'form-control']) !!}
     </div>
 
