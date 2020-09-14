@@ -2,9 +2,9 @@
 
 @section('content')
 
-<h1>Create User</h1>
+    <h1>Create User</h1>
 
-{!! Form::open(['method' => 'POST', 'action'=>'AdminUsersController@store', 'files'=>'true']) !!}
+    {!! Form::open(['method' => 'POST', 'action'=>'AdminUsersController@store', 'files'=>'true']) !!}
 
     <div class="form-group">
         {!! Form::label('name', "Name") !!}
@@ -39,8 +39,10 @@
     <div class="form-group">
         {!! Form::submit('Create User', ['class'=>'btn btn-primary']) !!}
     </div>
-{!! Form::close() !!}
-@include('includes.form_error')
+    {!! Form::close() !!}
+
+
+    @include('includes.form_error')
 
 
 
